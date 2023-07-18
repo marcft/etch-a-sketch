@@ -83,6 +83,7 @@ function paintSquare(target) {
                      parseInt(colorValue.substring(3,5), 16),
                      parseInt(colorValue.substring(5), 16)];
         target.dataset.originalColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+        target.dataset.timesShaded = 0;
     }
 
     else if (currentActiveButton.classList.contains('rainbow')) {
@@ -93,6 +94,7 @@ function paintSquare(target) {
         const rgbString = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
         target.style.backgroundColor = rgbString;
         target.dataset.originalColor = rgbString;
+        target.dataset.timesShaded = 0;
     }
 
     else if (currentActiveButton.classList.contains('shade')) {
