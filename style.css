@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* UTILITY CLASAS */
+
+.active {
+  transform: scale(1.075);
+  background-color: rgb(37, 159, 143);
+  font-weight: 600;
+}
+
+/* GENERAL STYLES */
+
+html {
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  background-color: rgb(130, 122, 202);
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin: 50px 0;
+}
+
+header > h1 {
+  display: inline;
+  padding: 10px 100px;
+  background-color: rgb(99, 92, 158);
+  border-radius: 30px;
+  font-size: 72px;
+  font-weight: 600;
+  text-align: center;
+}
+
+header > h1:hover {
+  opacity: 0.8;
+}
+
+/* MAIN */
+
+main {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+/* LEFT MENU */
+
+.menu {
+  padding: 30px;
+  background-color: #333;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.color-picker, button {
+  transition: transform 0.1s ease-in-out;
+}
+
+.color-picker {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 1px 20px 1px rgb(111, 111, 111);
+}
+
+.color-picker:hover {
+  transform: scale(1.1);
+}
+
+input[type="color"] {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+button {
+  box-sizing: border-box;
+  width: 160px;
+  display: block;
+  font: inherit;
+  color: inherit;
+  background-color: rgb(159, 159, 159);
+  border: none;
+  border-radius: 6px;
+  padding: 7.5px 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover, button:focus-visible {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.slider > input {
+  width: 160px;
+  margin-bottom: 7.5px;
+  cursor: grab;
+}
+
+.slider > input::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+
+.slider > input::-moz-range-thumb:active {
+  cursor: grabbing;
+}
+
+.slider > .grid-size {
+  font-weight: 500;
+  text-align: center;
+}
+
+.clear:hover {
+  background-color: rgb(255, 59, 59);
+}
+
+/* ETCH-A-SKETCH */
+
+.container {
+  height: 560px;
+  width: 560px;
+  background-color: #fff;
+  border: 10px solid rgb(99, 92, 158);
+  border-radius: 10px;
+  cursor: crosshair;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}

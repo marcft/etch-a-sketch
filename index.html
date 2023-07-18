@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <script src="etch-a-sketch.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,15 +13,24 @@
     </header>
     <main>
         <div class="menu">
-            <div class="color-selector"></div>
-            <button class="normal">Normal Mode</button>
-            <button class="rainbow">Rainbow Mode</button>
-            <button class="shadow">Shade Mode</button>
-            <button class="erase">Erase</button>
+            <div class="color-picker">
+                <input type="color" value="#daa520"></input>
+
+            </div>
+            <button class="mode normal active">Normal Mode</button>
+            <button class="mode rainbow">Rainbow Mode</button>
+            <button class="mode shadow">Shade Mode</button>
+            <button class="mode eraser">Eraser Mode</button>
+            <div class="slider">
+                <input type="range" value="24" min="1" max="64">
+                <p class="grid-size">Grid Size: 24 x 24</p>
+            </div>
             <button class="clear">Clear</button>
         </div>
         <div class="container"></div>
     </main>
-    <p>Made by Marc Frances</p>
+    <footer>
+        <p>Made by Marc Frances</p>
+    </footer>
 </body>
 </html>
