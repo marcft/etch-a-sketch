@@ -146,6 +146,15 @@ button:hover, button:focus-visible {
   border: 10px solid rgb(99, 92, 158);
   border-radius: 10px;
   cursor: crosshair;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+div.square {
+    box-sizing: border-box;
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    flex: 1 1 auto;
 }
 
 /* FOOTER */
