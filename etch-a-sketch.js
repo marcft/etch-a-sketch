@@ -55,11 +55,6 @@ function newGridSize(size) {
 
     const squares = document.querySelectorAll('div.square');
     squares.forEach(attachEventListeners);
-    /* squares.forEach(square => square.addEventListener('mouseover', (e) => {
-        const colorValue = colorPicker.value;
-        square.style.backgroundColor = `${colorValue}`;
-    })) */
-     
 }
 
 function attachEventListeners(square) {
